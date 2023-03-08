@@ -15,7 +15,8 @@ main {
   flex-grow: 1;
 }
 
-.App {
+.App,
+.errorMsg {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -45,7 +46,7 @@ nav li {
   margin-right: 1rem;
   color: #fff;
   font-size: 1.2rem;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 nav li:hover {
@@ -145,4 +146,14 @@ footer {
   background-color: #333;
   color: #fff;
   font-size: 0.8rem;
+}
+
+/* ERROR PAGE */
+
+.errorMsg>div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
