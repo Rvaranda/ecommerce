@@ -1,6 +1,9 @@
+import { useOutletContext } from 'react-router-dom';
 import Product from '../components/Product';
 
 function Products() {
+  const data = useOutletContext();
+
   return (
     <main>
       <div className='searchProduct'>
@@ -14,11 +17,9 @@ function Products() {
         </form>
       </div>
       <section className='productsGrid'>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {data.length && data.map(product => (
+          <Product key={product.id} data={product} />
+        ))}
       </section>
     </main>
   );
