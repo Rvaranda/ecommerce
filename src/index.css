@@ -22,7 +22,7 @@ main {
   min-height: 100vh;
 }
 
-/* HEADER */
+/* ============== HEADER ============== */
 
 header {
   display: flex;
@@ -74,7 +74,7 @@ nav a:hover {
   color: #333;
 }
 
-/* PRODUCTS */
+/* ============== PRODUCTS ============== */
 
 .products {
   display: flex;
@@ -89,6 +89,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 360px;
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -112,7 +113,7 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-/* HOME */
+/* ============== HOME ============== */
 
 .banner {
   display: flex;
@@ -140,7 +141,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* PRODUCTS PAGE */
+/* ============== PRODUCTS PAGE ============== */
 
 .searchProduct {
   margin: 2rem 0;
@@ -188,7 +189,7 @@ nav a:hover {
   grid-template-columns: auto auto auto auto;
 }
 
-/* INDIVIDUAL PRODUCT PAGE */
+/* ============== INDIVIDUAL PRODUCT PAGE ============== */
 
 main {
   margin-top: 5rem;
@@ -230,7 +231,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* FOOTER */
+/* ============== FOOTER ============== */
 
 footer {
   display: flex;
@@ -242,7 +243,7 @@ footer {
   font-size: 0.8rem;
 }
 
-/* ERROR PAGE */
+/* ============== ERROR PAGE ============== */
 
 .errorMsg>div {
   flex-grow: 1;
