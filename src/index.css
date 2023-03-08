@@ -44,12 +44,16 @@ nav ul {
 
 nav li {
   margin-right: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
   color: #fff;
   font-size: 1.2rem;
   text-decoration: none;
 }
 
-nav li:hover {
+nav a:hover {
   color: #c7c7c7;
 }
 
@@ -134,6 +138,54 @@ nav li:hover {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+/* PRODUCTS PAGE */
+
+.searchProduct {
+  margin: 2rem 0;
+}
+
+.searchProduct form {
+  text-align: center;
+}
+
+.searchProduct input {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: 1px solid #aaa;
+  border-right: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.searchProduct input:focus {
+  box-shadow: 0 0 3px 1px lightblue inset;
+}
+
+.searchProduct button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid black;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: all 0.2s ease;
+}
+
+.searchProduct button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 /* FOOTER */
