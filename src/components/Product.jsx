@@ -6,7 +6,7 @@ function Product({ data }) {
       <img src='https://via.placeholder.com/300x300' alt='Produto 1' />
       <h4>{data.name}</h4>
       <p>{`R$ ${data.price}`}</p>
-      <Link to='/product' className='btn'>Comprar</Link>
+      <Link to={`/products/${data.id}`} className='btn'>Comprar</Link>
     </div>
   );
 }
