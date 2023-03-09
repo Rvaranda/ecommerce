@@ -74,6 +74,24 @@ nav a:hover {
   color: #333;
 }
 
+.shoppingCart {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.shoppingCart svg {
+  margin-right: 0.5rem;
+}
+
+.shoppingCart:hover {
+  background-color: #999;
+  color: #f7f7f7;
+}
+
 /* ============== PRODUCTS ============== */
 
 .products {
