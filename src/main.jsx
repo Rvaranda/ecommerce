@@ -7,6 +7,7 @@ import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductPage from './pages/ProductPage';
+import Shopcart from './pages/Shopcart';
 
 import './index.css';
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: 'products/:id',
                 element: <ProductPage />
+            },
+            {
+                path: 'shopcart',
+                element: <Shopcart />
             }
         ]
     }

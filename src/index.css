@@ -249,6 +249,33 @@ main {
   margin-bottom: 1.5rem;
 }
 
+/* ============== SHOPCART ============== */
+
+.shoppingList {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0 5rem;
+  font-size: 1.5rem;
+}
+
+.shoppingList > table {
+  flex-grow: 1; 
+}
+
+.shoppingList > table td {
+  padding: 1rem;
+}
+
+.shoppingSummary {
+  padding: 1rem;
+  background-color: #c7c7c7;
+}
+
+.shoppingSummary td {
+  padding: 0.5rem;
+}
+
 /* ============== FOOTER ============== */
 
 footer {
