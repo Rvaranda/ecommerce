@@ -1,7 +1,9 @@
-import { Link, useOutletContext, useParams } from 'react-router-dom';
+import { useContext } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { ProductContext } from '../context/ProductProvider';
 
 function ProductPage() {
-  const products = useOutletContext();
+  const { products } = useContext(ProductContext);
   const { id } = useParams();
   const product = products.find(e => e.id.toString() === id);
 

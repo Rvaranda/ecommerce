@@ -1,8 +1,9 @@
-import { useOutletContext } from 'react-router-dom';
+import { useContext } from 'react';
+import { ProductContext } from '../context/ProductProvider';
 import Product from '../components/Product';
 
 function Products() {
-  const data = useOutletContext();
+  const { products, addProductToShoppingcart } = useContext(ProductContext);
 
   return (
     <main>
@@ -17,8 +18,12 @@ function Products() {
         </form>
       </div>
       <section className='productsGrid'>
-        {data.length && data.map(product => (
-          <Product key={product.id} data={product} />
+        {products.length && products.map(product => (
+          <Product
+            key={product.id}
+            data={product}
+            addProductToShoppingcart={addProductToShoppingcart}
+          />
         ))}
       </section>
     </main>
