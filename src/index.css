@@ -13,6 +13,7 @@ body {
 
 main {
   flex-grow: 1;
+  margin: 5rem 0;
 }
 
 .App,
@@ -209,10 +210,6 @@ nav a:hover {
 
 /* ============== INDIVIDUAL PRODUCT PAGE ============== */
 
-main {
-  margin-top: 5rem;
-}
-
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -252,22 +249,49 @@ main {
 /* ============== SHOPCART ============== */
 
 .shoppingList {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
-  padding: 0 5rem;
-  font-size: 1.5rem;
+  gap: 1.5rem;*/
+  /* padding: 0 3rem; */
+  /* font-size: 1.2rem; */
 }
 
-.shoppingList > table {
-  flex-grow: 1; 
+.shoppingList>table {
+  flex-grow: 1;
+  border-collapse: collapse;
 }
 
-.shoppingList > table td {
-  padding: 1rem;
+.shoppingList>table td {
+  padding: 0.7rem;
+  border-bottom: 1px solid black;
+}
+
+.shoppingList>table td img {
+  display: block;
+}
+
+.shoppingList>table tr:last-child td {
+  border: none;
+}
+
+.minusBtn,
+.plusBtn {
+  margin: 0 0.5rem;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.minusBtn {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.plusBtn {
+  border-radius: 0 1rem 1rem 0;
 }
 
 .shoppingSummary {
+  max-height: 300px;
   padding: 1rem;
   background-color: #c7c7c7;
 }

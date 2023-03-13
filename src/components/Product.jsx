@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Product({ data }) {
+function Product({ data, addProductToShoppingcart }) {
   return (
     <div className='product'>
       <Link to={`/products/${data.id}`}>
@@ -8,7 +8,13 @@ function Product({ data }) {
       </Link>
       <h4>{data.name}</h4>
       <p>{`R$ ${data.price}`}</p>
-      <Link to={`/products/${data.id}`} className='btn'>Comprar</Link>
+      <button
+        type='button'
+        className='btn'
+        onClick={() => addProductToShoppingcart(data.id)}
+      >
+        Adicionar ao carrinho
+      </button>
     </div>
   );
 }
