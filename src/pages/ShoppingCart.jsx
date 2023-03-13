@@ -4,7 +4,7 @@ import TableRow from '../components/TableRow';
 import ShoppingSummary from '../components/ShoppingSummary';
 import { ProductContext } from '../context/ProductProvider';
 
-function Shopcart() {
+function ShoppingCart() {
   const { shoppingCart } = useContext(ProductContext);
 
   return (
@@ -31,4 +31,4 @@ function Shopcart() {
   );
 }
 
-export default Shopcart;
+export default ShoppingCart;

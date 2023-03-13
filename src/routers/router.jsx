@@ -5,7 +5,7 @@ import ErrorPage from '../pages/ErrorPage';
 import Home from '../pages/Home';
 import Products from '../pages/Products';
 import ProductPage from '../pages/ProductPage';
-import Shopcart from '../pages/Shopcart';
+import ShoppingCart from '../pages/ShoppingCart';
 
 export default createBrowserRouter([
   {
@@ -26,8 +26,8 @@ export default createBrowserRouter([
         element: <ProductPage />
       },
       {
-        path: 'shopcart',
-        element: <Shopcart />
+        path: 'shoppingcart',
+        element: <ShoppingCart />
       }
     ]
   }

@@ -10,7 +10,7 @@ function Nav() {
                 <li><Link to='/'>Sobre</Link></li>
                 <li><Link to='/'>Contato</Link></li>
             </ul>
-            <Link to='/shopcart' className='shoppingCart'>
+            <Link to='/shoppingcart' className='shoppingCart'>
                 <FaShoppingCart />
                 Carrinho
             </Link>
