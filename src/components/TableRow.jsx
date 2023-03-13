@@ -2,16 +2,20 @@ function TableRow({ name, price, amount }) {
   return (
     <tr>
       <td>
-        <img
-          src='https://via.placeholder.com/150x150'
-          alt='produto'
-        />
+        <div className='itemDescription'>
+          <img
+            src='https://via.placeholder.com/120x120'
+            alt='produto'
+          />
+          <span>{name}</span>
+        </div>
       </td>
-      <td>{name}</td>
       <td>
-        <button type='button' className='minusBtn'>-</button>
-        {amount}
-        <button type='button' className='plusBtn'>+</button>
+        <div className='amountController'>
+          <button type='button' className='plusBtn'>+</button>
+          <span>{amount}</span>
+          <button type='button' className='minusBtn'>-</button>
+        </div>
       </td>
       <td>{`R$ ${price}`}</td>
     </tr>

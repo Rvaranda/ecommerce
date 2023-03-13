@@ -75,7 +75,7 @@ nav a:hover {
   color: #333;
 }
 
-.shoppingCart {
+.shoppingCartBtn {
   background-color: #f7f7f7;
   color: #333;
   padding: 0.5rem 1rem;
@@ -84,11 +84,11 @@ nav a:hover {
   transition: all 0.2s ease;
 }
 
-.shoppingCart svg {
+.shoppingCartBtn svg {
   margin-right: 0.5rem;
 }
 
-.shoppingCart:hover {
+.shoppingCartBtn:hover {
   background-color: #999;
   color: #f7f7f7;
 }
@@ -246,48 +246,76 @@ nav a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* ============== SHOPCART ============== */
+/* ============== SHOPPING CART ============== */
 
-.shoppingList {
-  /* display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;*/
-  /* padding: 0 3rem; */
-  /* font-size: 1.2rem; */
+.shoppingCart {
+  flex-grow: 1;
+  max-width: 70%;
+  min-height: 600px;
+  padding: 2rem;
+  border: 1px solid #c1c1c1;
+  background-color: #fff;
 }
 
-.shoppingList>table {
-  flex-grow: 1;
+.shoppingCart table {
+  width: 100%;
   border-collapse: collapse;
 }
 
-.shoppingList>table td {
-  padding: 0.7rem;
-  border-bottom: 1px solid black;
+.shoppingCart th {
+  text-align: left;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #c5c5c5;
 }
 
-.shoppingList>table td img {
-  display: block;
+.shoppingCart th:first-child {
+  text-align: center;
 }
 
-.shoppingList>table tr:last-child td {
-  border: none;
+.shoppingCart td {
+  padding: 1rem 0;
+  border-bottom: 1px solid #cacaca;
+}
+
+.shoppingCart td .itemDescription {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.shoppingCart td span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.shoppingCart td .amountController {
+  display: flex;
+}
+
+.shoppingCart td .amountController span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 3px;
+  text-align: center;
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .minusBtn,
 .plusBtn {
-  margin: 0 0.5rem;
-  padding: 0.1rem 0.5rem;
+  font-size: 1.5rem;
+  /* padding: 1rem 1.5rem; */
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #c9c9c9;
 }
 
 .minusBtn {
-  border-radius: 1rem 0 0 1rem;
-}
-
-.plusBtn {
-  border-radius: 0 1rem 1rem 0;
+  background-color: #222;
+  color: white;
 }
 
 .shoppingSummary {

@@ -8,25 +8,28 @@ function ShoppingCart() {
   const { shoppingCart } = useContext(ProductContext);
 
   return (
-    <main style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-      <section className='shoppingList'>
+    <main style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className='shoppingCart'>
         <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Quantidade</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
           <tbody>
             {shoppingCart.map(product => (
               <TableRow
                 key={product.id}
                 name={product.name}
-                price={product.price}
                 amount={1}
+                price={product.price}
               />
             ))}
-            {/* <TableRow name='Produto 2' price={136.98} amount={3} /> */}
           </tbody>
         </table>
-      </section>
-      <aside className='shoppingSummary'>
-        <ShoppingSummary />
-      </aside>
+      </div>
     </main>
   );
 }
