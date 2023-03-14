@@ -8,8 +8,8 @@ function ShoppingCart() {
   const { shoppingCart } = useContext(ProductContext);
 
   return (
-    <main style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <div className='shoppingCart'>
+    <main>
+      <section className='shoppingCart'>
         <table>
           <thead>
             <tr>
@@ -19,6 +19,11 @@ function ShoppingCart() {
             </tr>
           </thead>
           <tbody>
+            {shoppingCart.length === 0 && (
+              <tr>
+                <td colSpan={3} style={{ textAlign: 'center' }}>Seu carrinho está vazio</td>
+              </tr>
+            )}
             {shoppingCart.map(product => (
               <TableRow
                 key={product.id}
@@ -29,7 +34,8 @@ function ShoppingCart() {
             ))}
           </tbody>
         </table>
-      </div>
+        <ShoppingSummary />
+      </section>
     </main>
   );
 }
