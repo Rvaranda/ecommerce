@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import Products from '../pages/Products';
 import ProductPage from '../pages/ProductPage';
 import ShoppingCart from '../pages/ShoppingCart';
+import Login from '../pages/Login';
 
 export default createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export default createBrowserRouter([
       {
         path: 'shoppingcart',
         element: <ShoppingCart />
+      },
+      {
+        path: 'login',
+        element: <Login />
       }
     ]
   }
